@@ -1,0 +1,41 @@
+/*
+Author: Braden Vivas
+*/
+
+.page-content {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+}
+
+.version-title {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+
+    margin-left: auto;
+    padding-right: 1vw;
+
+    color: white;
+    font-size: 1.5vw;
+
+    z-index: 2;
+}
+
+.version-bar {
+    display: flex;
+    position: fixed;
+
+    right: 0;
+    bottom: 0;
+
+    width: 100vw;
+    /* Set the width of the rectangle */
+    height: 2dvw;
+    /* Set the height of the rectangle */
+    background: linear-gradient(to right, lightgray, #C0491E);
+    /* Gradient background */
+    border: none;
+    /* Optional: Add a border for visual enhancement */
+    z-index: 1;
+}

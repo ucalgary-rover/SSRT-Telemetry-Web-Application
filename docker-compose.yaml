@@ -1,0 +1,36 @@
+services:
+  react-front-end:
+    build:
+      context: ./react-tel
+      dockerfile: Dockerfile
+    restart: always
+    environment:
+      NODE_ENV: development
+    ports:
+      - 4000:4000 
+      # Links the exposed port 4000 of react app the container to the host machine
+    volumes:
+      - ./react-tel:/src/app
+      - /src/app/node_modules
+    networks:
+      - local-container-network
+
+  tile-server:
+    build:
+      context: ./tile-serv
+      dockerfile: Dockerfile
+    ports:
+      - 8080:8080
+      # Links the exposed port 8080 of tile-server container to the host machine
+    volumes:
+      - ./tile-serv:/data  
+      # location of .mbtiles file
+      # a volume is created to link a local host machine folder tile-serv to
+      # a volume within the container called data. 
+      # refer https://hub.docker.com/r/maptiler/tileserver-gl on why this is done
+    networks:
+      - local-container-network
+
+networks:
+  local-container-network:
+    driver: bridge

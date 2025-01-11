@@ -1,0 +1,20 @@
+.menu-content
+{
+    height: 250px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    background-color: #f8f9fa;
+    text-align: left; 
+}
+
+.menu-header{
+    display: flex;
+    flex-direction: row;
+    align-items: left; 
+    gap: 10px;
+    padding: auto;
+}
+
+.map-icon {
+    width: 30px; /* Adjust as needed */
+}

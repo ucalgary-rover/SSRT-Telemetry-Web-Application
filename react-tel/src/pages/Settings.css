@@ -1,0 +1,14 @@
+.page-content {
+    display: flex;
+    flex-direction: column;
+    z-index: -1;
+}
+
+.page-server-header
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px;
+}
+    

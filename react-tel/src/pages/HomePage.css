@@ -1,0 +1,14 @@
+.background-image {
+    /* Set background image*/
+    background: url(/ssrt/simon-two.jpg) no-repeat center center/cover !important;
+    background-color: #cccccc;
+    background-size: 110vw 110vh;
+
+    position: absolute;
+
+    width: 110%;
+    height: 110%;
+
+    z-index: -1;
+    transition: background-position 0.1s;
+}

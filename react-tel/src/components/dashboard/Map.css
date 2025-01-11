@@ -1,0 +1,36 @@
+/*main map view*/
+#map {
+    height: 250px;
+    max-width: 100%; 
+    box-sizing: border-box; 
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    text-align: center; 
+}
+
+/*zoom components*/
+#popup {
+    position: 'absolute';
+
+    display: flex;
+
+    border: 1px solid black;
+    border-radius: 5px;
+
+    padding-top: 3%;
+    justify-content: center;
+
+    width: 50%;
+    height: 50%;
+}
+
+.coordinate-label {
+    font-size: 10px;
+    background-color: white;
+}
+
+/*set last position control button*/
+.set-last {
+    top: 65px;
+    left: .5em;
+}
